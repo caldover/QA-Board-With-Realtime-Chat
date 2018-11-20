@@ -62,9 +62,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+//        return User::create([
+//            'email' => $data['email'],
+//            'password' => Hash::make($data['password']),
+//        ]);
+
+        // Creates 50 fake questions after registering a new account
+        $user = User::create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+        for ($i = 1; $i <= 50; $i++) {
+            $question = factory(\App\Question::class)->make();
+            $question->user()->associate($user);
+            $question->save();
+        }
+        return $user;
     }
 }
