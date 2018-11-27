@@ -37,15 +37,18 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        $input = $request->validate([
+        $input = $request->validate(
+            [
             'fname' => 'required',
             'lname' => 'required',
             'body' => 'required',
-        ], [
+            ],
+            [
             'fname.required' => ' First is required',
             'lname.required' => ' Last is required',
             'body.required' => ' Body is required',
-        ]);
+            ]
+        );
         $input = request()->all();
         $profile = new Profile($input);
         $profile->user()->associate(Auth::user());

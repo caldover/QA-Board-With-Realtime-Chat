@@ -5,5 +5,6 @@
                 <li>{{ $error }}</li>
             @endforeach
         </ul>
-    </div><br />
+    </div>
+    <br />
 @endif

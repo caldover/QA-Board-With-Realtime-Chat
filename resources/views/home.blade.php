@@ -9,9 +9,7 @@
                         <a class="btn btn-primary float-right" href="{{ route('questions.create') }}">
                             Create a Question
                         </a>
-
                         <div class="card-body">
-
                             <div class="card-deck">
                                 @forelse($questions as $question)
                                     <div class="col-sm-4 d-flex align-items-stretch">
@@ -20,7 +18,6 @@
                                                 <small class="text-muted">
                                                     Updated: {{ $question->created_at->diffForHumans() }}
                                                     Answers: {{ $question->answers()->count() }}
-
                                                 </small>
                                             </div>
                                             <div class="card-body">
@@ -39,17 +36,13 @@
                                 @empty
                                     There are no questions to view, you can  create a question.
                                 @endforelse
-
-
                             </div>
-
                         </div>
                         <div class="card-footer">
                             <div class="float-right">
                                 {{ $questions->links() }}
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

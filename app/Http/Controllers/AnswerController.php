@@ -37,12 +37,15 @@ class AnswerController extends Controller
      */
     public function store(Request $request, $question)
     {
-        $input = $request->validate([
+        $input = $request->validate(
+            [
             'body' => 'required|min:5',
-        ], [
+            ],
+            [
             'body.required' => 'Body is required',
             'body.min' => 'Body must be at least 5 characters',
-        ]);
+            ]
+        );
         $input = request()->all();
         $question = Question::find($question);
         $Answer = new Answer($input);
@@ -83,12 +86,15 @@ class AnswerController extends Controller
      */
     public function update(Request $request, $question, $answer)
     {
-        $input = $request->validate([
-            'body' => 'required|min:5',
-        ], [
+        $input = $request->validate(
+            [
+                'body' => 'required|min:5',
+            ],
+            [
             'body.required' => 'Body is required',
             'body.min' => 'Body must be at least 5 characters',
-        ]);
+            ]
+        );
 
         $answer = Answer::find($answer);
         $answer->body = $request->body;

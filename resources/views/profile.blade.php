@@ -6,7 +6,6 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">My Profile</div>
-
                     <div class="card-body ">
                         <span class="font-weight-bold">First Name:</span> {{$profile->fname}}</br>
                         <span class="font-weight-bold">Last Name: </span>{{$profile->lname}}</br>
@@ -17,7 +16,6 @@
                             Edit
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
