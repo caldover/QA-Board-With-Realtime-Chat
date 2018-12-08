@@ -77,7 +77,7 @@ class App extends Component {
     render() {
         const allChats = this.props.allChatsQuery.allChats || [];
         return (
-            <div className="chat-container">
+            <div className="container">
                 <div className="chat-header">
                     Open Chat
                 </div>
