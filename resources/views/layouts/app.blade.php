@@ -75,5 +75,6 @@
         @yield('content')
     </main>
 </div>
+<script type="text/javascript" src="{{ asset('js/react.js') }}"></script>
 </body>
 </html>
