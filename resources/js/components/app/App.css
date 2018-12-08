@@ -1,40 +1,34 @@
-.container {
+.chat-container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin: 0 auto;
+    height: 80vh;
+    border-radius: 4px;
 }
 
 @media (min-width: 576px) {
-    .container {
+    .chat-container {
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .chat-container {
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    .chat-container {
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .chat-container {
         max-width: 1140px;
     }
-}
-
-.chat-container {
-    margin: 0 auto;
-    width: 70vw;
-    height: 80vh;
-    border-radius: 4px;
 }
 
 .chat-history {
