@@ -41,7 +41,12 @@ For a bonus learning experience:
   * A separate link to the Home page (placed on the left side of the navbar, next to the Logo)
   * A link to the Chat Room (placed next to the Home page link)
 
-Fun stuff! Now without further ado, let's talk about the requirements of the project!
+Fun stuff!
+
+Proceeding this section you'll find the following:
+* A Requirements Breakdown which highlights the details of the Epic and User Stories of this project
+* A Solutions Breakdown which highlights how each User Story will be implemented in the project
+* A User Guide to using the chat feature
 
 ## Requirements Breakdown
 
