@@ -2,7 +2,7 @@
 
 Try it here! https://caldover-qa-with-realtime-chat.herokuapp.com/home
 
-For further guidance see the ["User Guide"](https://github.com/caldover/QA-Board-With-Realtime-Chat/new/master?readme=1#user-guide) section below!
+For further guidance see the ["User Guide"](https://github.com/caldover/QA-Board-With-Realtime-Chat/tree/master#user-guide) section below!
 
 ## About
 Base QA Board app was developed with PHP and Laravel for a school project
