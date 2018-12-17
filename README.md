@@ -11,7 +11,7 @@ This project extends the QA Board app and features a real-time anonymous chat fo
 
 I saw this as a great opportunity to learn more about JavaScript, [React](https://reactjs.org/), and [GraphQL](https://graphql.org/) and these are the exactly technologies being used to develop the chat room!
 
-Originally, Laravel made it simple to include Vue.js scaffolding, but luckily for me Laravel 5.5 included a new preset to make integration of React components into Laravel based apps much easier!
+Originally, Laravel made it simple to include Vue.js scaffolding, but luckily for us Laravel 5.5 included a new preset to make integration of React components into Laravel based apps much easier!
 
 The following commands will change the preset and install the new dependencies:
 ```
